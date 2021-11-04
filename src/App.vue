@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="container is-fluid" id="nav">
+      <router-link to="/">Test</router-link>
+      <b-icon class="iconQuestion" pack="fa" icon="question-circle"></b-icon>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -18,7 +18,8 @@
 }
 
 #nav {
-  padding: 30px;
+  padding-top: 30px;
+  text-align: left;
 
   a {
     font-weight: bold;
@@ -27,6 +28,24 @@
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+  .iconQuestion {
+    color: #80808075;
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  th {
+    font-size: 0.8rem;
+  }
+  .dropFile .upload {
+    margin-top: 20px !important;
+  }
+  .dropFile {
+    display: block !important;
+  }
+  .iconAction.mr-5 {
+    margin-right: 0rem !important;
   }
 }
 </style>

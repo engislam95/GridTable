@@ -8,6 +8,8 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "@mdi/font": "^6.4.95",
+    "buefy": "^0.9.11",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
